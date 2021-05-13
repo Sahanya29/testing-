@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
+
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-product-details',
@@ -7,6 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent  {
 
-  products=[1,2,3,4,5];
+  @Input() productObj:Product;
+
+ @Output() myEvent=new EventEmitter()
+
+ 
+
 
 }
