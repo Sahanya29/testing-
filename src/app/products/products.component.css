@@ -1,0 +1,10 @@
+li{
+    background-color: #F7C0B9;
+}
+li a{
+    color: blue;
+}
+
+:active{
+    background-color: black;
+}
