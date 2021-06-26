@@ -1,0 +1,23 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 p-4 mt-3">
+    <div *ngFor="let myobj of mydataone" class="col p-3">
+        <div class="card shadow">
+            <div class="card-item">
+                <div class="card-body">
+                    <h5 class="text-center mb-3  "><i class="fas fa-address-card"></i>  {{myobj.name}} </h5>
+                    
+                    <P>  <span class="text-primary"> User Id : </span> {{myobj.id}}</P>
+                    <p>  <span class="text-primary">Name :</span>{{myobj.name}}</p>
+                    <P>  <span class="text-primary">User Name :</span>{{myobj.username}}</P>
+                    <P>  <span class="text-primary">email :</span>{{myobj.email}}</P>
+                    <P>  <span class="text-primary">address :</span>  {{myobj.address.street}} ,{{myobj.address.suite}} ,{{myobj.address.city}} ,{{myobj.address.zipcode}} ,LAT :{{myobj.address.geo.lat}} ,LNG :{{myobj.address.geo.lng}}</P>
+
+                    <P><span class="text-primary">Phone : </span>{{myobj.phone}}</P>
+                    <P><span  class="text-primary">Website : </span>{{myobj.website}}</P>
+                    <P><span class="text-primary">Company Name : </span>{{myobj.company.name}}</P>
+                    <P><span class="text-primary">Catch Phrase : </span>{{myobj.company.catchPhrase}}</P>
+                    <P><span class="text-primary">BS : </span>{{myobj.company.bs}}</P>
+                    
+                    </div>
+                </div>    
+        </div>
+        </div>

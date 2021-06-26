@@ -1,0 +1,24 @@
+<h3>REQRES{{users.page}}</h3>
+<table class="table text-dark  text-center">
+    <thead>
+      <tr>
+        
+        <th>ID</th>
+        <th>Email</th>
+        <th>Profile Pic</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let postObj of users.data">
+            <td>{{postObj.id}}</td>
+            <td>{{postObj.email}}</td>
+            <td>{{postObj.avtar}}</td>
+            
+        </tr>
+        
+    
+    </tbody>
+
+</table>

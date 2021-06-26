@@ -1,0 +1,21 @@
+<table class="table  text-center p-3 ">
+    <thead >
+        <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Year</th>
+        <th>color</th>
+        <th>pantone value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mytest2obj of mydatatwo.data">
+            <td >{{mytest2obj.id}}</td>
+            <td >{{mytest2obj.name}}</td>
+            <td >{{mytest2obj.year}}</td>
+            <td ><p style="background-color: {{mytest2obj.color}} " class="border p-4 mt-1"></p></td>
+            <td >{{mytest2obj.pantone_value}}</td>
+        </tr>
+    </tbody>
+
+</table>           

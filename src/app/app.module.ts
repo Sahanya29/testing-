@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
+import {FormsModule} from '@angular/forms';
+
 
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +16,9 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
 import { BikesComponent } from './bikes/bikes.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
+import { TestComponent } from './test/test.component';
+import { Data1Component } from './data1/data1.component';
+import { Data2Component } from './data2/data2.component';
 
 
 @NgModule({
@@ -30,6 +35,9 @@ import { TelevisionsComponent } from './televisions/televisions.component';
         MobilesComponent,
         BikesComponent,
         TelevisionsComponent,
+        TestComponent,
+        Data1Component,
+        Data2Component,
         
   ],
   imports: [
